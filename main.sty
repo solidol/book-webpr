@@ -4,7 +4,7 @@
 \RequirePackage[cp1251]{inputenc}
 \RequirePackage[english,russian,ukrainian]{babel}
 
-
+\RequirePackage{fancyvrb}
 
 \RequirePackage{bibunits}
 
@@ -16,6 +16,7 @@
 %\RequirePackage{cyrillic}
 %\RequirePackage{pscyr}
 \RequirePackage{graphicx}
+\RequirePackage{float}
 \RequirePackage{amssymb,amsfonts,amsmath,amsthm}
 
 \RequirePackage{indentfirst}
@@ -36,7 +37,7 @@
 \RequirePackage{lscape}
 \RequirePackage{microtype}
 
-
+\RequirePackage{minted}
 
 
 
@@ -256,3 +257,8 @@
 \addtocontents{toc}{\protect\redeflchapter}
 \def\thechapter{\appendixname\hspace{0.2cm}\@Alph\c@chapter}}
 \makeatother
+
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+%
